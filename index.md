@@ -2,7 +2,7 @@
 
 **Project description:** In this project we explore how a market basket analysis can be used to analyze a online grocery dataset from Instacart, customer behaviors and provide simple purchase recommendations using association rules and the a priori algorithm   
 
-<kbd> <img src="images/Instacart.jpg/?raw=true"/> </kbd>
+<kbd> <img src="images/Instacart.jpg/"/> </kbd>
 
 The steps we will follow are:  \
   [ ] Describe the dataset used for market basket analysis \
@@ -221,7 +221,8 @@ beauty
   The distribution is right skewed with a long tail and a mode of 1 for product purchased count  
   
   ## Do customers purchase items together frequently ?
-  [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/user_purchase_frequency.html.html)
+
+  [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/user_purchase_frequency.html)
 
   <kbd> <img src="images/Top Users by Purchase Frequency.PNG/?raw=true"/> </kbd>
   
