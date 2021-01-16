@@ -210,6 +210,9 @@ beauty
 
   ## What does the distribution of the products purchased look like ?
 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/item_frequency.html" height="525" width="100%"></iframe>
+
+
   <kbd> <img src="images/Top Items by by Purchase Frequency.PNG/?raw=true"/> </kbd>
 
   From the chart above we can quickly identify that product purchase frequency drops significantly after the top 1000 ranked products (around the 50 percentile of product count) and organic and fresh products are by far the most popular products
