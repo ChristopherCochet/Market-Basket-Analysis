@@ -79,7 +79,7 @@ We will describe the analysis and findings by clearly connecting the business qu
   reordered: 1 if this product has been ordered by this user in the past, 0 otherwise
   where SET is one of the four following evaluation sets (eval_set in orders):
   ```
-  ## Tracking our progress
+  ### Tracking our progress
   [X] Describe the dataset used for market basket analysis  \
   [ ] Pose relevant questions related to the customer and purchase data  \
   [ ] Process, analyze, model and visualize the data to answer these questions \
@@ -95,7 +95,7 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
   * Do customers purchase items together frequently and which products are most often purchased together ?
   * Can we use this information to recommend other products based on a customer’s cart ?
 
-## Tracking our progress
+### Tracking our progress
 [X] Describe the dataset used for market basket analysis \
 [X] Pose relevant questions related to the customer and purchase data \
 [ ] Process, analyze, model and visualize the data to answer these questions \
@@ -123,7 +123,7 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
 
        Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/3%20-%20Basket%20Analysis%20-%20Modeling%20%26%20Evaluation.ipynb)
 
-  ## Tracking our progress
+  ### Tracking our progress
   [X] Describe the dataset used for market basket analysis  \
   [X] Pose relevant questions related to the customer and purchase data  \
   [X] Process, analyze, model and visualize the data to answer these questions \
@@ -252,7 +252,7 @@ beauty
   frozenset({'Organic Lemon', 'Bag of Organic Bananas'})=>frozenset({'Organic Hass Avocado'})
   ``` 
 
-  ## Tracking our progress
+  ### Tracking our progress
   [X] Describe the dataset used for market basket analysis \
   [X] Pose relevant questions related to the customer and purchase data  \
   [X] Process, analyze, model and visualize the data to answer these questions \
