@@ -2,7 +2,7 @@
 
 **Project description:** In this project we explore how a market basket analysis can be used to analyze a online grocery dataset from Instacart, customer behaviors and provide simple purchase recommendations using association rules and the a priori algorithm   
 
-<kbd> <img src="images/Instacart.jpg/"/> </kbd>
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Instacart.jpg"/> </kbd>
 
 The steps we will follow are:  \
   [ ] Describe the dataset used for market basket analysis \
@@ -29,7 +29,7 @@ We will describe the analysis and findings by clearly connecting the business qu
 
   # 1. The Instacart Online Grocery Shopping Dataset (Kaggle)
 
-  <kbd> <img src="images/instacart-mobile.png/?raw=true"/> </kbd>
+  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/instacart-mobile.png"/> </kbd>
 
   The Instacart Online Grocery Shopping Dataset is an anonymized dataset containing a sample of over 3 million grocery orders from more than 200,000 Instacart users.
   
@@ -124,19 +124,19 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
       We start by loading the data, inspecting and profiling it and checking for quality issues.
       We then perfom some EDA and visualize inspect the Instacart retail data
 
-      <kbd> <img src="images/jupyter.png/?raw=true"/> </kbd>
+      <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/jupyter.png"/> </kbd>
       Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/1%20-%20Basket%20Analysis%20-%20Data%20Preparation%20and%20Understanding.ipynb)
 
   * **Deliver Insights** \
       In the analysis notebook we focus on using the preocessed data to answers the key business questions listed and some customer purchase patterns
 
-      <kbd> <img src="images/jupyter.png/?raw=true"/> </kbd>
+      <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/jupyter.png"/> </kbd>>
       Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/2%20-%20Basket%20Analysis%20-%20Deliver%20Insights.ipynb)
 
   * **Modeling & Evaluation / Deployment** \
       In the modeling notebook we finalize our analysis by modelling the data and using Association Rules to build a simple recommendation engine based on the customer p[urchase patterns
 
-      <kbd> <img src="images/jupyter.png/?raw=true"/> </kbd>
+      <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/jupyter.png"/> </kbd>
        Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/3%20-%20Basket%20Analysis%20-%20Modeling%20%26%20Evaluation.ipynb)
       
 
@@ -152,7 +152,7 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
   
   By far, bananas are the most popular product purchased, followed by Strawberries and Spinach
 
-  <kbd> <img src="images/Most popular Items.PNG/?raw=true"/> </kbd>
+  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Most popular Items.PNG"/> </kbd>
   
   The majority of the top 20 most popular products are organic - it seems that Instacart customers like fresh and healthy products
   ```
@@ -179,7 +179,7 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
 ```
   This is confirmed by looking at the most popular aisles with the top two: fresh vegetables and fresh fruits 
 
-  <kbd> <img src="images/Most popular Aisles.PNG/?raw=true"/> </kbd>
+  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Most popular Aisles.PNG"/> </kbd>
 
   On the other hand, there is a long list of products that have been purchased only once, these represents about 20% (8k) of the unique product list purchased. Here is sample from that list:
 ```
@@ -213,22 +213,22 @@ beauty
 
   [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/item_frequency.html)
 
-  <kbd> <img src="images/Top Items by by Purchase Frequency.PNG/?raw=true"/> </kbd>
+  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Top Items by by Purchase Frequency.PNG"/> </kbd>
 
   From the chart above we can quickly identify that product purchase frequency drops significantly after the top 1000 ranked products (around the 50 percentile of product count) and organic and fresh products are by far the most popular products
 
-  <img src="images/Product Purchase Distribution.PNG/?raw=true"/> </kbd>
+  <kbd>  <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Product Purchase Distribution.PNG"/> </kbd>
   The distribution is right skewed with a long tail and a mode of 1 for product purchased count  
   
   ## Do customers purchase items together frequently ?
 
   [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/user_purchase_frequency.html)
 
-  <kbd> <img src="images/Top Users by Purchase Frequency.PNG/?raw=true"/> </kbd>
+  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Top Users by Purchase Frequency.PNG"/> </kbd>
   
   About 4k users have purchase 30 products or more with one user having purchase 80 products in a single order. After that threshold passed, the curve flattens quickly for the rest of the 100k+ users
 
-  <kbd> <img src="images/Distribution of Product Puchases by Customer.PNG/?raw=true"/> </kbd>
+  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Distribution of Product Puchases by Customer.PNG"/> </kbd>
   
   The distribution is right skewed with a long tail and a mode of 5 product purchase per use
 
@@ -256,11 +256,11 @@ beauty
 
   The algorithm outputs association rules identified in the data - these are ordered by descending order of lift scores:
 
-  <kbd> <img src="images/A Priori Output.PNG/?raw=true"/> </kbd>
+  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/A Priori Output.PNG"/> </kbd>
 
   If we visualize the association rules using a heatmap of the lift metrics, we can easily identify the items with strongest association lift scores: 
 
-  <kbd> <img src="images/Items Relationships HeatMap.PNG/?raw=true"/> </kbd>
+  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Items Relationships HeatMap.PNG"/> </kbd>
 
   We can identify that Organic Garlic, Bag of Organic Bananas and Organic Yellow Onion have the strongest relationship. \
   Another example include Organic Hass Avocado, Organic Strawberries and Organic Lemon.
@@ -291,4 +291,4 @@ Using association rules we have identified items that customers purchase togethe
 
 In addition, we have an a priori model that we can use to recommend instacart customers specific products based on their existing online cart. An example of a similar recommendation in production is shown below!
 
-<kbd> <img src="images/frequently bought together.png/?raw=true"/> </kbd>
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/frequently bought together.png"/> </kbd>
