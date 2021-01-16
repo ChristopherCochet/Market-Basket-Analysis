@@ -124,20 +124,21 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
       We start by loading the data, inspecting and profiling it and checking for quality issues.
       We then perfom some EDA and visualize inspect the Instacart retail data
 
-      Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/1%20-%20Basket%20Analysis%20-%20Data%20Preparation%20and%20Understanding.ipynb)
       <kbd> <img src="images/jupyter.png/?raw=true"/> </kbd>
+      Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/1%20-%20Basket%20Analysis%20-%20Data%20Preparation%20and%20Understanding.ipynb)
 
   * **Deliver Insights** \
       In the analysis notebook we focus on using the preocessed data to answers the key business questions listed and some customer purchase patterns
 
-      Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/2%20-%20Basket%20Analysis%20-%20Deliver%20Insights.ipynb)
       <kbd> <img src="images/jupyter.png/?raw=true"/> </kbd>
+      Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/2%20-%20Basket%20Analysis%20-%20Deliver%20Insights.ipynb)
 
   * **Modeling & Evaluation / Deployment** \
       In the modeling notebook we finalize our analysis by modelling the data and using Association Rules to build a simple recommendation engine based on the customer p[urchase patterns
 
-       Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/3%20-%20Basket%20Analysis%20-%20Modeling%20%26%20Evaluation.ipynb)
       <kbd> <img src="images/jupyter.png/?raw=true"/> </kbd>
+       Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/3%20-%20Basket%20Analysis%20-%20Modeling%20%26%20Evaluation.ipynb)
+      
 
   ### Tracking our progress
   [X] Describe the dataset used for market basket analysis  \
