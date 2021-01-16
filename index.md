@@ -29,7 +29,7 @@ We will describe the analysis and findings by clearly connecting the business qu
 
   # 1. The Instacart Online Grocery Shopping Dataset (Kaggle)
 
-  <kbd> <img src="images/instacart-mobile.PNG/?raw=true"/> </kbd>
+  <kbd> <img src="images/instacart-mobile.png/?raw=true"/> </kbd>
 
   The Instacart Online Grocery Shopping Dataset is an anonymized dataset containing a sample of over 3 million grocery orders from more than 200,000 Instacart users.
   
@@ -147,7 +147,7 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
 
   # 4. Providing Insights and Identifying Customer Purchase Patterns using Market Basket Analysis
   
-  ## Which are the most purpolar items purchased ? Which are the least ?
+  ## Which are the most popular items purchased ? Which are the least ?
   
   By far, bananas are the most popular product purchased, followed by Strawberries and Spinach
 
