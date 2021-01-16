@@ -2,14 +2,15 @@
 
 **Project description:** In this project we explore how a market basket analysis can be used to analyze a online grocery dataset from Instacart, customer behaviors and provide simple purchase recommendations using association rules and the a priori algorithm   
 
-<kbd> <img src="images/power bi.gif?raw=true"/> </kbd>
+<kbd> <img src="images/Instacart.jpg/?raw=true"/> </kbd>
 
-The steps we will follow are:
-  - [ ] Describe the dataset used for market basket analysis
-  - [ ] Pose relevant questions related to the customer and purchase data 
-  - [ ] Process, analyze, model and visualize the data to answer these questions
-  - [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
-  - [ ] Communicate business insights and findings by clearly connecting the business questions and the data used
+The steps we will follow are:  \
+  [ ] Describe the dataset used for market basket analysis \
+  [ ] Pose relevant questions related to the customer and purchase data  \
+  [ ] Process, analyze, model and visualize the data to answer these questions \
+  [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset \
+
+We will describe the analysis and findings by clearly connecting the business questions to the data used
 
 ---
 
@@ -28,6 +29,8 @@ The steps we will follow are:
   We will use this method to analyze a retail dataset from Kaggle.   
 
   # 1. The Instacart Online Grocery Shopping Dataset (Kaggle)
+
+  <kbd> <img src="images/instacart-mobile.PNG/?raw=true"/> </kbd>
 
   The Instacart Online Grocery Shopping Dataset is an anonymized dataset containing a sample of over 3 million grocery orders from more than 200,000 Instacart users.
   
@@ -77,217 +80,188 @@ The steps we will follow are:
   where SET is one of the four following evaluation sets (eval_set in orders):
   ```
   ## Tracking our progress
-    - [X] Describe the dataset used for market basket analysis
-    - [ ] Pose relevant questions related to the customer and purchase data 
-    - [ ] Process, analyze, model and visualize the data to answer these questions
-    - [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
-    - [ ] Communicate business insights and findings by clearly connecting the business questions and the data used
+  [X] Describe the dataset used for market basket analysis  \
+  [ ] Pose relevant questions related to the customer and purchase data  \
+  [ ] Process, analyze, model and visualize the data to answer these questions \
+  [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset \
 
 ---
 
-# 2. Interesting Questions
+# 2. Interesting Topics To Analyze and Questions to Answer About Instacart's Grocery Dataset
 
-  Now that we are a bit more familiar with the Instacart grocery dataset, let's plan to investigate the following questions:
+Now that we are a bit more familiar with the Instacart grocery dataset, let's plan to investigate the following questions:
   * Which are the most purpolar items purchased ? Which are the least ?
   * What does the distribution of the products purchased look like ?
   * Do customers purchase items together frequently and which products are most often purchased together ?
   * Can we use this information to recommend other products based on a customer’s cart ?
 
-  ## Tracking our progress
-    - [X] Describe the dataset used for market basket analysis
-    - [X] Pose relevant questions related to the customer and purchase data 
-    - [ ] Process, analyze, model and visualize the data to answer these questions
-    - [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
-    - [ ] Communicate business insights and findings by clearly connecting the business questions and the data used
+## Tracking our progress
+[X] Describe the dataset used for market basket analysis \
+[X] Pose relevant questions related to the customer and purchase data \
+[ ] Process, analyze, model and visualize the data to answer these questions \
+[ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset \
 
 ---
 # 3. Process, analyze, model and visualize the data to answer these questions
   
   In this project and the following jupyter notebook, we largely follow the CRISP-DM process :
-  * Business understanding - refer to the background information section above
-  * Data preparation & understanding - refer to the following notebook (***) 
+  * **Business understanding** - refer to the background information section above
+
+  * **Data preparation & understanding** 
       We start by loading the data, inspecting and profiling it and checking for quality issues
       We then perfom some EDA and visualize inspect the Instacart retail data
-  * Deliver Insights - refer to the following notebook (***) 
+
+      Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/1%20-%20Basket%20Analysis%20-%20Data%20Preparation%20and%20Understanding.ipynb)
+
+  * **Deliver Insights** 
       In the analysis notebook we focus on using the preocessed data to answers the key business questions listed and some customer purchase patterns
-  * Modeling & Evaluation / Deployment - refer to the following notebook (***) 
+
+      Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/2%20-%20Basket%20Analysis%20-%20Deliver%20Insights.ipynb)
+
+  * **Modeling & Evaluation / Deployment**
       In the modeling notebook we finalize our analysis by modelling the data and using Association Rules to build a simple recommendation engine based on the customer p[urchase patterns
 
-  ## Tracking our progress
-    - [X] Describe the dataset used for market basket analysis
-    - [X] Pose relevant questions related to the customer and purchase data 
-    - [X] Process, analyze, model and visualize the data to answer these questions
-    - [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
-    - [ ] Communicate business insights and findings by clearly connecting the business questions and the data used
-
-
-  # 4. Provide insights into the use of Market Basket Analysis and Aswer Questions
-  
-  1. Which are the most purpolar items purchased ? Which are the least ?
-  2. What does the distribution of the products purchased look like ?
-  3. Do customers purchase items together frequently and which products are most often purchased together ?
-  4. Can we use this information to recommend other products based on a customer’s cart ?
+       Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/3%20-%20Basket%20Analysis%20-%20Modeling%20%26%20Evaluation.ipynb)
 
   ## Tracking our progress
-    - [X] Describe the dataset used for market basket analysis
-    - [X] Pose relevant questions related to the customer and purchase data 
-    - [X] Process, analyze, model and visualize the data to answer these questions
-    - [X] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
-    - [ ] Communicate business insights and findings by clearly connecting the business questions and the data used
+  [X] Describe the dataset used for market basket analysis  \
+  [X] Pose relevant questions related to the customer and purchase data  \
+  [X] Process, analyze, model and visualize the data to answer these questions \
+  [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset \
 
-## Pre-requisite
-  * PSQL CLI installed (http://postgresguide.com/utilities/psql.html)
-  * NorthWind database SQL script downloaded to your local environment
-  (https://github.com/pthom/northwind_psql/blob/master/northwind.sql)
-
-## PSQL database in a nutshell
-  PSQL is the interactive CLI to interact with Postgres databases. 
-  PSQL lets user create, query, update and delete POSTGRES tables and databases through the command line. 
-
-## Create the NorthWind database using PSQL
-1. Deploy the NorthWind database sql script
-
-   - Create the NorthWind database
-   ```
-   psql -h dsdj-postgres-db.clpvihbunw2c.ap-southeast-2.rds.amazonaws.com -U postgres -p 5432 -c "CREATE DATABASE \"NorthWind\";"
-   ```
-
-      <kbd> <img src="images/PSQL 1.PNG?raw=true"/> </kbd>
-
-   - Create the NorthWind tables
-   ```
-   psql -h dsdj-postgres-db.clpvihbunw2c.ap-southeast-2.rds.amazonaws.com -U postgres -p 5432 -d NorthWind < northwind.sql
-   ```
-
-      <kbd> <img src="images/PSQL 2.PNG?raw=true"/> </kbd>
-
-2. Check that the NorthWind database was properly created with PGADMIN or PSQL
-
-   - PGADMIN 
-
-      <kbd> <img src="images/pgAdmin 4.PNG?raw=true"/> </kbd>
-
-   - PSQL, Once connected to the Northwind Database use: ``` \d ```
-
-      <kbd> <img src="images/PSQL 3.PNG?raw=true"/> </kbd>
-
-
-### Tracking our progress
-  - [X] Deploy an AWS RDS POSTGRES INSTANCE using TERRAFORM (Free Tier)
-  - [X] Check connection to the POSTGRES INSTANCE using PGADMIN 
-  - [X] Load a relational database (NorthWind) to the RDS POSTGRES instance using PSQL
-  - [ ] Connect Power BI Desktop to the RDS POSTGRES NorthWind database
-  - [ ] Build a Simple Power BI Dashboard using the NorthWind dabase
-  - [ ] Deploy the Power BI dashboard
-
----
-
-# 4. Connect Power BI Desktop to the RDS POSTGRES NorthWind database
-  Now that we have database instance running with the NorthWind tables loaded, we turn our attention 
-  to connecting to the tables with Power BI
-
-## Pre-requisite
-  * Power BI desktop installed (https://powerbi.microsoft.com/en-us/downloads/)
-
-### Power BI in a nutshell
-  Power BI is an ETL and visualization Microsoft tool for business analytics and reporting. 
-  It provides interactive visualizations and business intelligence capabilitieto create reports 
-  and dashboards which can be deployed in Microsoft and Azure's environment. 
-
-  1. Launch Power BI Desktop
+  # 4. Providing Insights and Identifying Customer Purchase Patterns using Market Based Analysis
   
-  <kbd> <img src="images/power bi 1.PNG?raw=true"/> </kbd>
-
-  2. Connect to the POSTGRES NorthWind database using AWS host connection information
-
-   - Use get data and find the Postgres data source in the list 
-    
-      <kbd> <img src="images/power bi 2.PNG?raw=true"/> </kbd>
-    
-   - Enter the Postgres RDS host information and database name
-    
-      <kbd> <img src="images/power bi 3.PNG?raw=true"/> </kbd>
-    
-   - Enter the Postgres RDS host information and database name
-    
-      <kbd> <img src="images/power bi 4.PNG?raw=true"/> </kbd>
-
-  3. Load to the POSTGRES NorthWind tables 
-
-   - Power BI will show the available NorthWind database tables available
-      
-      <kbd> <img src="images/power bi 5.PNG?raw=true"/> </kbd>
-
-   - Select and load the NorthWind database tables 
-      
-      <kbd> <img src="images/power bi 6.PNG?raw=true"/> </kbd>
-
-### Tracking our progress
- - [X] Deploy an AWS RDS POSTGRES INSTANCE using TERRAFORM (Free Tier)
- - [X] Check connection to the POSTGRES INSTANCE using PGADMIN 
- - [X] Load a relational database (NorthWind) to the RDS POSTGRES instance using PSQL
- - [X] Connect Power BI Desktop to the RDS POSTGRES NorthWind database
- - [ ] Build a Simple Power BI Dashboard using the NorthWind dabase
- - [ ] Deploy the Power BI dashboard
-
-
-# 5. Build a Simple Power BI Dashboard using the NorthWind dabase
-  We've connected to the NrthWind database with Power BI and now are going to build a simple set of graphs for our dashboard.
-
-  The NorthWind database includes 14 tables and the their relationships - below are a few key tables:
-  * Suppliers: Suppliers and vendors of Northwind
-  * Customers: Customers who buy products from Northwind
-  * Employees: Employee details of Northwind traders
-  * Products: Product information
-  * Shippers: The details of the shippers who ship the products from the traders to the end-customers
-  * Orders and Order_Details: Sales Order transactions taking place between the customers & the company
-
-## Pre-requisite
-  * Northwind database and table relationships (https://docs.yugabyte.com/latest/sample-data/northwind)
-  * NorthWind's entity relationship diagram is shown below:
+  ## Which are the most purpolar items purchased ? Which are the least ?
   
-  <kbd> <img src="images/northwind-er-diagram.png?raw=true"/> </kbd>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; By far, bananas are the most popular product purchased, followed bu Strawberries and Spinach
+  <kbd> <img src="images/Most popular Items.PNG/?raw=true"/> </kbd>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Majority of the top 20 products are organic - it seems that Instacart customers like fresh and healthy products
+  ```
+  Banana                    18726
+  Bag of Organic Bananas    15480
+  Organic Strawberries      10894
+  Organic Baby Spinach       9784
+  Large Lemon                8135
+  Organic Avocado            7409
+  Organic Hass Avocado       7293
+  Strawberries               6494
+  Limes                      6033
+  Organic Raspberries        5546
+  Organic Blueberries        4966
+  Organic Whole Milk         4908
+  Organic Cucumber           4613
+  Organic Zucchini           4589
+  Organic Yellow Onion       4290
+  Organic Garlic             4158
+  Seedless Red Grapes        4059
+  Asparagus                  3868
+  Organic Grape Tomatoes     3823
+  Organic Red Onion          3818
+```
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is confirmed by looking at the most popular aisles with the top two: fresh vegetables and fresh fruits 
+  <kbd> <img src="images/Most popular Aisles.PNG/?raw=true"/> </kbd>
 
+  On the other hand, there is a long list of products that have been purchased only once, these represents about 20% (8k) of the unique product list purchased. Here is sample from that list:
+```
+Lucuma & Cacoa Chocolate Bar 
+Organic Nori Rice Cakes No Salt                             
+Wheat and Gluten Free Snickerdoodle Cookies                 
+Sweet Basil                                                 
+Handcrafter French Pot Ice Cream Buckeye Chocolate Chip     
+Cereal, Veganic Sprouted, Spelt Flakes                      
+Shrimp Ring                                                 
+Plain Kefir                                                 
+Dark Chocolate Truffles                                     
+Itsy Bitsy Cheese Ravioli                                   1
+Prenatal Multivitamin Tablets                               
+```   
+  The least popular products belong to aisles that are mostly non food related such as baby bath body care, baby accessories, beauty etc.
+``` 
+first aid                     
+skin care                     
+shave needs                   
+ice cream toppings            
+specialty wines champagnes    
+kitchen supplies              
+baby bath body care           
+baby accessories              
+frozen juice                  
+beauty                                                   
+```   
 
-## Power BI Modeling and Dashboard Creation
-  Once the database table are imported in Power BI, the tool with automatically identify the table relationships 
+  ## What does the distribution of the products purchased look like ?
 
-  1. Check the table relationships in Power BI
+  <kbd> <img src="images/Top Items by by Purchase Frequency.PNG/?raw=true"/> </kbd>
+
+  From the chart above we can quickly identify that product purchase frequency drops significantly after the top 1000 ranked products (around the 50 percentile of product count) and organic and fresh products are by far the most popular products
+
+  <img src="images/Product Purchase Distribution.PNG/?raw=true"/> </kbd>
+  The distribution is right skewed with a long tail and a mode of 1 for product purchased count  
   
-  <kbd> <img src="images/power bi 7.PNG?raw=true"/> </kbd>
-
-  2. Build charts and graphs for the dashboard (examples below)
-
-   - NorthWind products overview  
-    
-      <kbd> <img src="images/power bi 8.PNG?raw=true"/> </kbd>
-    
-   - NorthWind products revenue overview
-    
-      <kbd> <img src="images/power bi 9.PNG?raw=true"/> </kbd>
-    
-   - NorthWind customers overview
-    
-      <kbd> <img src="images/power bi 10.PNG?raw=true"/> </kbd>
-
-### Tracking our progress
- - [X] Deploy an AWS RDS POSTGRES INSTANCE using TERRAFORM (Free Tier)
- - [X] Check connection to the POSTGRES INSTANCE using PGADMIN 
- - [X] Load a relational database (NorthWind) to the RDS POSTGRES instance using PSQL
- - [X] Connect Power BI Desktop to the RDS POSTGRES NorthWind database
- - [X] Build a Simple Power BI Dashboard using the NorthWind dabase
- - [ ] Deploy the Power BI dashboard
-
-
-## Deploy the Power BI dashboard
-  We are done, we now simply need to publish the dashboard to a Power BI Workspace and start analyzing !
+  ## Do customers purchase items together frequently ?
+   
+  <kbd> <img src="images/Top Users by Purchase Frequency.PNG/?raw=true"/> </kbd>
   
-  <kbd> <img src="images/power bi 11.PNG?raw=true"/> </kbd>
+  About 4k users have purchase 30 products or more with one user having purchase 80 products in a single order. After that threshold passed, the curve flattens quickly for the rest of the 100k+ users
 
-## Tracking our progress
- - [X] Deploy an AWS RDS POSTGRES INSTANCE using TERRAFORM (Free Tier)
- - [X] Check connection to the POSTGRES INSTANCE using PGADMIN 
- - [X] Load a relational database (NorthWind) to the RDS POSTGRES instance using PSQL
- - [X] Connect Power BI Desktop to the RDS POSTGRES NorthWind database
- - [X] Build a Simple Power BI Dashboard using the NorthWind dabase
- - [X] Deploy the Power BI dashboard
+  <kbd> <img src="images/Distribution of Product Puchases by Customer.PNG/?raw=true"/> </kbd>
+  
+  The distribution is left skewed with a long tail and a mode of 5 product purchase per use
+
+ ## Which products are most often purchased together ?
+  To answer this question, we turn to association rules that uncover how items are associated to each other.
+
+  > Association rules are created by searching data for frequent if-then patterns and using the criteria support and confidence to identify the most important relationships. 
+  >
+  > * **Support** is an indication of how frequently the items appear in the data, measured by the proportion of transactions in which an item appears. 
+  > * **Confidence** indicates the number of times the if-then statements are found true. How likely item Y is purchased when item X is purchased, expressed as {X -> Y} 
+  > * **Lift** is the ratio of the observed support to that expected if X and Y were independent. A lift value greater than 1 means that item Y is likely to be bought if item X is bought.
+
+  How to interpret association rules: \
+  The rule {onions, potatoes} => {burger} found in the data would indicate that if a customer buys onions and potatoes together, they are likely to also buy hamburger meat with onions,potatoes} called **antecedent** and {burger} the **consequent**
+
+  We used an implementation of the a [priori algorith](https://www.geeksforgeeks.org/apriori-algorithm/) in the mlxtend libary to analyze the Istacart purchased items associations. More information about the library may be found [here](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/)
+
+  We apply the a priori algorithm to a binary matrix of filtered orders and products in which for each order is a row and each columns a product with 1 signifying that the product was present in the order and 0 if it wasn't. It is a sparse matrix. In the Jupter notebook the shape of the matrix is :
+  ```  
+  (2499, 17085) -- 2,499 rows (orders) x 17,085 columns (products)
+  ``` 
+
+  The algorithm outputs association rules identified in the data - these are ordered by descdending lift scores:
+
+  <kbd> <img src="images/A Priori Output.PNG/?raw=true"/> </kbd>
+
+  If we visualize the association rules using a heatmap of the lift metrics, we can easily identify the items with strongest association lift scores: 
+
+  <kbd> <img src="images/Items Relationships HeatMap.PNG/?raw=true"/> </kbd>
+
+  We can identify that Organic Garlic, Bag of Organic Bananas and Organic Yellow Onion have the stronges relationship. Another 
+  example include Organic Hass Avocado, Organic Strawberrie and Organic Lemon.
+
+  ## Can we use this information to recommend other products based on a customer’s cart ?
+
+  Yes ! By tuning and specific lift/support/confidence thresholds, we can  recommend items based on existing customer shopping carts:
+
+  As an example with one item in the cart:
+   ```  
+  "frozenset({'Organic Garlic'})=>frozenset({'Organic Yellow Onion'})"
+  ``` 
+
+  As an example with two items in the cart:
+   ```  
+  frozenset({'Organic Lemon', 'Bag of Organic Bananas'})=>frozenset({'Organic Hass Avocado'})
+  ``` 
+
+  ## Tracking our progress
+  [X] Describe the dataset used for market basket analysis \
+  [X] Pose relevant questions related to the customer and purchase data  \
+  [X] Process, analyze, model and visualize the data to answer these questions \
+  [X] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
+
+# Conclusion 
+
+Using association rules we have identified items that customers purchase together frequently and which products are most often purchased together.
+
+In addition, we have an a priori model that we can use to recommend instacart customer products based on their existing online cart such as the example below!
+
+<kbd> <img src="images/frequently bought together.png/?raw=true"/> </kbd>
