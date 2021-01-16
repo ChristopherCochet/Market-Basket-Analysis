@@ -210,7 +210,7 @@ beauty
 
   ## What does the distribution of the products purchased look like ?
 
-  https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/item_frequency.html
+  [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/item_frequency.html)
 
   <kbd> <img src="images/Top Items by by Purchase Frequency.PNG/?raw=true"/> </kbd>
 
@@ -220,7 +220,8 @@ beauty
   The distribution is right skewed with a long tail and a mode of 1 for product purchased count  
   
   ## Do customers purchase items together frequently ?
-   
+  [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/user_purchase_frequency.html.html)
+
   <kbd> <img src="images/Top Users by Purchase Frequency.PNG/?raw=true"/> </kbd>
   
   About 4k users have purchase 30 products or more with one user having purchase 80 products in a single order. After that threshold passed, the curve flattens quickly for the rest of the 100k+ users
@@ -229,7 +230,7 @@ beauty
   
   The distribution is right skewed with a long tail and a mode of 5 product purchase per use
 
- ## Which products are most often purchased together ?
+  ## Which products are most often purchased together ?
   To answer this question, we turn to association rules that uncover how items are associated to each other.
 
   > Association rules are created by searching data for frequent if-then patterns and using the criteria support and confidence to identify the most important relationships. 
