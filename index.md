@@ -210,9 +210,7 @@ beauty
 
   ## What does the distribution of the products purchased look like ?
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/item_frequency.html" height="525" width="100%"></iframe>
-
-https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/Predictions.PNG
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/item_frequency.html" height="525" width="100%"></iframe>
 
   <kbd> <img src="images/Top Items by by Purchase Frequency.PNG/?raw=true"/> </kbd>
 
