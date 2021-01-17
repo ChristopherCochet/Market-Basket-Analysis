@@ -96,7 +96,7 @@ We will describe the analysis and findings by clearly connecting the business qu
   [X] Describe the dataset used for market basket analysis  \
   [ ] Pose relevant questions related to the customer and purchase data  \
   [ ] Process, analyze, model and visualize the data to answer these questions \
-  [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset \
+  [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
 
 ---
 
@@ -112,7 +112,7 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
 [X] Describe the dataset used for market basket analysis \
 [X] Pose relevant questions related to the customer and purchase data \
 [ ] Process, analyze, model and visualize the data to answer these questions \
-[ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset \
+[ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
 
 ---
 # 3. Process, analyze, model and visualize the data to answer the above questions
