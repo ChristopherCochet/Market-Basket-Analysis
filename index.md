@@ -139,7 +139,6 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
       <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/jupyter.png"/> </kbd>
        Refer to the following notebook [here](https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/3%20-%20Basket%20Analysis%20-%20Modeling%20%26%20Evaluation.ipynb)
       
-  s   
 
 ### Tracking our progress
 [X] Describe the dataset used for market basket analysis  \
