@@ -282,10 +282,10 @@ beauty
   ``` 
 
   ### Tracking our progress
-  [X] Describe the dataset used for market basket analysis \
+  [X] Describe the dataset used for market basket analysis  \
   [X] Pose relevant questions related to the customer and purchase data  \
   [X] Process, analyze, model and visualize the data to answer these questions \
-  [X] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
+  [X] Provide insights into the use of Market Basket Analysis and why it is appropriate for this datasetet
 
 ---
 
