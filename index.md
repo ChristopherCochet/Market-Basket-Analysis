@@ -1,4 +1,4 @@
-# Market Basket Analysis and Association Rules 
+# Market Basket Analysis and Association Rules - INDEX
 
 **Project description:** In this project we explore how a market basket analysis can be used to analyze a online grocery dataset from Instacart, customer behaviors and provide simple purchase recommendations using association rules and the a priori algorithm   
 
@@ -147,7 +147,6 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
 [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
 
 ---
-
   # 4. Providing Insights and Identifying Customer Purchase Patterns using Market Basket Analysis
   
   ## Which are the most popular items purchased ? Which are the least ?
@@ -210,6 +209,7 @@ baby accessories
 frozen juice                  
 beauty                                                   
 ```   
+
 
   ## What does the distribution of the products purchased look like ?
 
@@ -281,7 +281,7 @@ beauty
   frozenset({'Organic Lemon', 'Bag of Organic Bananas'})=>frozenset({'Organic Hass Avocado'})
   ``` 
 
-
+aa
   ### Tracking our progress
   [X] Describe the dataset used for market basket analysis  \
   [X] Pose relevant questions related to the customer and purchase data  \
