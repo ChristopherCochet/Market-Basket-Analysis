@@ -1,4 +1,4 @@
-# Market Basket Analysis and Association Rules - README
+# Market Basket Analysis and Association Rules
 
 **Project description:** In this project we explore how a market basket analysis can be used to analyze a online grocery dataset from Instacart, customer behaviors and provide simple purchase recommendations using association rules and the a priori algorithm   
 
