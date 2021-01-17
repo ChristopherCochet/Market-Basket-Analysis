@@ -147,42 +147,43 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
 [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
 
 ---
-  # 4. Providing Insights and Identifying Customer Purchase Patterns using Market Basket Analysis
-  
-  ## Which are the most popular items purchased ? Which are the least ?
-  
-  By far, bananas are the most popular product purchased, followed by Strawberries and Spinach
 
-  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Most popular Items.PNG"/> </kbd>
-  
-  The majority of the top 20 most popular products are organic - it seems that Instacart customers like fresh and healthy products
-  ```
-  Banana                    18,726
-  Bag of Organic Bananas    15,480
-  Organic Strawberries      10,894
-  Organic Baby Spinach       9,784
-  Large Lemon                8,135
-  Organic Avocado            7,409
-  Organic Hass Avocado       7,293
-  Strawberries               6,494
-  Limes                      6,033
-  Organic Raspberries        5,546
-  Organic Blueberries        4,966
-  Organic Whole Milk         4,908
-  Organic Cucumber           4,613
-  Organic Zucchini           4,589
-  Organic Yellow Onion       4,290
-  Organic Garlic             4,158
-  Seedless Red Grapes        4,059
-  Asparagus                  3,868
-  Organic Grape Tomatoes     3,823
-  Organic Red Onion          3,818
+# 4. Providing Insights and Identifying Customer Purchase Patterns using Market Basket Analysis
+
+## Which are the most popular items purchased ? Which are the least?
+
+By far, bananas are the most popular product purchased, followed by Strawberries and Spinach
+
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Most popular Items.PNG"/> </kbd>
+
+The majority of the top 20 most popular products are organic - it seems that Instacart customers like fresh and healthy products
 ```
-  This is confirmed by looking at the most popular aisles with the top two: fresh vegetables and fresh fruits 
+Banana                    18,726
+Bag of Organic Bananas    15,480
+Organic Strawberries      10,894
+Organic Baby Spinach       9,784
+Large Lemon                8,135
+Organic Avocado            7,409
+Organic Hass Avocado       7,293
+Strawberries               6,494
+Limes                      6,033
+Organic Raspberries        5,546
+Organic Blueberries        4,966
+Organic Whole Milk         4,908
+Organic Cucumber           4,613
+Organic Zucchini           4,589
+Organic Yellow Onion       4,290
+Organic Garlic             4,158
+Seedless Red Grapes        4,059
+Asparagus                  3,868
+Organic Grape Tomatoes     3,823
+Organic Red Onion          3,818
+```
+This is confirmed by looking at the most popular aisles with the top two: fresh vegetables and fresh fruits 
 
-  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Most popular Aisles.PNG"/> </kbd>
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Most popular Aisles.PNG"/> </kbd>
 
-  On the other hand, there is a long list of products that have been purchased only once, these represents about 20% (8k) of the unique product list purchased. Here is sample from that list:
+On the other hand, there is a long list of products that have been purchased only once, these represents about 20% (8k) of the unique product list purchased. Here is sample from that list:
 ```
 Lucuma & Cacoa Chocolate Bar 
 Organic Nori Rice Cakes No Salt                             
@@ -196,7 +197,7 @@ Dark Chocolate Truffles
 Itsy Bitsy Cheese Ravioli                                   
 Prenatal Multivitamin Tablets                               
 ```   
-  The least popular products belong to aisles that are mostly non food related such as baby bath body care, baby accessories, beauty etc.
+The least popular products belong to aisles that are mostly non food related such as baby bath body care, baby accessories, beauty etc.
 ``` 
 first aid                     
 skin care                     
@@ -210,83 +211,82 @@ frozen juice
 beauty                                                   
 ```   
 
+## What does the distribution of the products purchased look like ?
 
-  ## What does the distribution of the products purchased look like ?
+[Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/item_frequency.html)
 
-  [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/item_frequency.html)
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Top Items by by Purchase Frequency.PNG"/> </kbd>
 
-  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Top Items by by Purchase Frequency.PNG"/> </kbd>
+From the chart above we can quickly identify that product purchase frequency drops significantly after the top 1000 ranked products (around the 50 percentile of product count) and organic and fresh products are by far the most popular products
 
-  From the chart above we can quickly identify that product purchase frequency drops significantly after the top 1000 ranked products (around the 50 percentile of product count) and organic and fresh products are by far the most popular products
+<kbd>  <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Product Purchase Distribution.PNG"/> </kbd>
+The distribution is right skewed with a long tail and a mode of 1 for product purchased count  
 
-  <kbd>  <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Product Purchase Distribution.PNG"/> </kbd>
-  The distribution is right skewed with a long tail and a mode of 1 for product purchased count  
-  
-  ## Do customers purchase items together frequently ?
+## Do customers purchase items together frequently ?
 
-  [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/user_purchase_frequency.html)
+[Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/user_purchase_frequency.html)
 
-  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Top Users by Purchase Frequency.PNG"/> </kbd>
-  
-  About 4k users have purchase 30 products or more with one user having purchase 80 products in a single order. After that threshold passed, the curve flattens quickly for the rest of the 100k+ users
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Top Users by Purchase Frequency.PNG"/> </kbd>
 
-  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Distribution of Product Puchases by Customer.PNG"/> </kbd>
-  
-  The distribution is right skewed with a long tail and a mode of 5 product purchase per use
+About 4k users have purchase 30 products or more with one user having purchase 80 products in a single order. After that threshold passed, the curve flattens quickly for the rest of the 100k+ users
 
-  ## Which products are most often purchased together ?
-  To answer this question, we turn to association rules that uncover how items are associated to each other.
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Distribution of Product Puchases by Customer.PNG"/> </kbd>
 
-  > Association rules are created by searching data for frequent if-then patterns and using the criteria support and confidence to identify the most important relationships. 
-  >
-  > * **Support** is an indication of how frequently the items appear in the data, measured by the proportion of transactions in which an item appears.
-  > 
-  > * **Confidence** indicates the number of times the if-then statements are found true. How likely item Y is purchased when item X is purchased, expressed as {X -> Y} 
-  >
-  > * **Lift** is the ratio of the observed support to that expected if X and Y were independent. A lift value greater than 1 means that item Y is likely to be bought if item X is bought.
+The distribution is right skewed with a long tail and a mode of 5 product purchase per use
 
-  **How to interpret association rules:** \
-  The rule **{onions, potatoes} => {burger}** found in the data would indicate that if a customer buys onions and potatoes together, they are likely to also buy hamburger meat with onions,potatoes} called **antecedent** and {burger} the **consequent**
+## Which products are most often purchased together ?
+To answer this question, we turn to association rules that uncover how items are associated to each other.
 
-  We used an implementation of the a [priori algorith](https://www.geeksforgeeks.org/apriori-algorithm/) in the mlxtend libary to analyze the Istacart purchased items associations. More information about the library may be found [here](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/)
+> Association rules are created by searching data for frequent if-then patterns and using the criteria support and confidence to identify the most important relationships. 
+>
+> * **Support** is an indication of how frequently the items appear in the data, measured by the proportion of transactions in which an item appears.
+> 
+> * **Confidence** indicates the number of times the if-then statements are found true. How likely item Y is purchased when item X is purchased, expressed as {X -> Y} 
+>
+> * **Lift** is the ratio of the observed support to that expected if X and Y were independent. A lift value greater than 1 means that item Y is likely to be bought if item X is bought.
 
-  We apply the a priori algorithm to a binary matrix of filtered orders and products in which for each order is a row and each columns a product with 1 signifying that the product was present in the order and 0 if it wasn't. It is a sparse matrix. In the Jupter notebook the shape of the matrix is :
+**How to interpret association rules:** \
+The rule **{onions, potatoes} => {burger}** found in the data would indicate that if a customer buys onions and potatoes together, they are likely to also buy hamburger meat with onions,potatoes} called **antecedent** and {burger} the **consequent**
+
+We used an implementation of the a [priori algorith](https://www.geeksforgeeks.org/apriori-algorithm/) in the mlxtend libary to analyze the Istacart purchased items associations. More information about the library may be found [here](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/apriori/)
+
+We apply the a priori algorithm to a binary matrix of filtered orders and products in which for each order is a row and each columns a product with 1 signifying that the product was present in the order and 0 if it wasn't. It is a sparse matrix. In the Jupter notebook the shape of the matrix is :
+```  
+# 2,499 rows (orders) x 17,085 columns (products)
+(2499, 17085) 
+``` 
+
+The algorithm outputs association rules identified in the data - these are ordered by descending order of lift scores:
+
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/A Priori Output.PNG"/> </kbd>
+
+If we visualize the association rules using a heatmap of the lift metrics, we can easily identify the items with strongest association lift scores: 
+
+<kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Items Relationships HeatMap.PNG"/> </kbd>
+
+We can identify that Organic Garlic, Bag of Organic Bananas and Organic Yellow Onion have the strongest relationship. \
+Another example include Organic Hass Avocado, Organic Strawberries and Organic Lemon.
+
+## Can we use this information to recommend other products based on a customer’s cart ?
+
+**Yes !** By tuning and specific lift/support/confidence thresholds, we can  recommend items based on existing customer shopping carts:
+
+As an example with one item in the cart:
   ```  
-  # 2,499 rows (orders) x 17,085 columns (products)
-  (2499, 17085) 
-  ``` 
+"frozenset({'Organic Garlic'})=>frozenset({'Organic Yellow Onion'})"
+``` 
 
-  The algorithm outputs association rules identified in the data - these are ordered by descending order of lift scores:
+As an example with two items in the cart:
+  ```  
+frozenset({'Organic Lemon', 'Bag of Organic Bananas'})=>frozenset({'Organic Hass Avocado'})
+``` 
 
-  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/A Priori Output.PNG"/> </kbd>
-
-  If we visualize the association rules using a heatmap of the lift metrics, we can easily identify the items with strongest association lift scores: 
-
-  <kbd> <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Items Relationships HeatMap.PNG"/> </kbd>
-
-  We can identify that Organic Garlic, Bag of Organic Bananas and Organic Yellow Onion have the strongest relationship. \
-  Another example include Organic Hass Avocado, Organic Strawberries and Organic Lemon.
-
-  ## Can we use this information to recommend other products based on a customer’s cart ?
-
-  **Yes !** By tuning and specific lift/support/confidence thresholds, we can  recommend items based on existing customer shopping carts:
-
-  As an example with one item in the cart:
-   ```  
-  "frozenset({'Organic Garlic'})=>frozenset({'Organic Yellow Onion'})"
-  ``` 
-
-  As an example with two items in the cart:
-   ```  
-  frozenset({'Organic Lemon', 'Bag of Organic Bananas'})=>frozenset({'Organic Hass Avocado'})
-  ``` 
-
-aa
-  ### Tracking our progress
-  [X] Describe the dataset used for market basket analysis  \
-  [X] Pose relevant questions related to the customer and purchase data  \
-  [X] Process, analyze, model and visualize the data to answer these questions \
-  [X] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
+aaa
+### Tracking our progress
+[X] Describe the dataset used for market basket analysis  \
+[X] Pose relevant questions related to the customer and purchase data  \
+[X] Process, analyze, model and visualize the data to answer these questions \
+[X] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
 
 ---
 # Conclusion 
