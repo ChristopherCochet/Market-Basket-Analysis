@@ -1,4 +1,4 @@
-# Market Basket Analysis and Association Rules 
+# Market Basket Analysis and Association Rules - README
 
 **Project description:** In this project we explore how a market basket analysis can be used to analyze a online grocery dataset from Instacart, customer behaviors and provide simple purchase recommendations using association rules and the a priori algorithm   
 
@@ -99,7 +99,6 @@ We will describe the analysis and findings by clearly connecting the business qu
   [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
 
 ---
-
 # 2. Interesting Topics To Analyze and Questions to Answer About Instacart's Grocery Dataset
 
 Now that we are a bit more familiar with the Instacart grocery dataset, let's plan to investigate the following questions:
@@ -147,10 +146,9 @@ Now that we are a bit more familiar with the Instacart grocery dataset, let's pl
   [ ] Provide insights into the use of Market Basket Analysis and why it is appropriate for this dataset
 
 ---
-
-  # 4. Providing Insights and Identifying Customer Purchase Patterns using Market Basket Analysis
+  # 4. Providing Insights and Identifying Customer Purchase Patterns using Market Basket Analysis 
   
-  ## Which are the most popular items purchased ? Which are the least ?
+  ## Which are the most popular items purchased ? Which are the least ? 
   
   By far, bananas are the most popular product purchased, followed by Strawberries and Spinach
 
@@ -211,7 +209,7 @@ frozen juice
 beauty                                                   
 ```   
 
-  ## What does the distribution of the products purchased look like ?
+  ## What does the distribution of the products purchased look like ? 
 
   [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/item_frequency.html)
 
@@ -222,7 +220,7 @@ beauty
   <kbd>  <img src="https://christophercochet.github.io/Market-Basket-Analysis/images/Product Purchase Distribution.PNG"/> </kbd>
   The distribution is right skewed with a long tail and a mode of 1 for product purchased count  
   
-  ## Do customers purchase items together frequently ?
+  ## Do customers purchase items together frequently ? 
 
   [Interactive Plotly Chart](https://htmlpreview.github.io/?https://github.com/ChristopherCochet/Market-Basket-Analysis/blob/main/graphs/user_purchase_frequency.html)
 
@@ -234,7 +232,7 @@ beauty
   
   The distribution is right skewed with a long tail and a mode of 5 product purchase per use
 
-  ## Which products are most often purchased together ?
+  ## Which products are most often purchased together ? 
   To answer this question, we turn to association rules that uncover how items are associated to each other.
 
   > Association rules are created by searching data for frequent if-then patterns and using the criteria support and confidence to identify the most important relationships. 
@@ -281,16 +279,14 @@ beauty
   frozenset({'Organic Lemon', 'Bag of Organic Bananas'})=>frozenset({'Organic Hass Avocado'})
   ``` 
 
-  ### Tracking our progress
+  ### Tracking our progress 
   [X] Describe the dataset used for market basket analysis  \
   [X] Pose relevant questions related to the customer and purchase data  \
   [X] Process, analyze, model and visualize the data to answer these questions \
   [X] Provide insights into the use of Market Basket Analysis and why it is appropriate for this datasetet
 
 ---
-
 # Conclusion 
-
 Using association rules we have identified items that customers purchase together frequently and which products are most often purchased together.
 
 In addition, we have an a priori model that we can use to recommend instacart customers specific products based on their existing online cart. An example of a similar recommendation in production is shown below!
